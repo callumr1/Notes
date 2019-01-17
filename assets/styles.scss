@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  height: 100%;
   background-color: $secondary_black;
   color: $font_white;
 }
@@ -88,8 +89,20 @@ body {
 }
 /* Right column (page content) */
 .right {
+  display: flex;
+  flex-flow: column;
   flex: 80%;
-  padding: 15px;
+  padding: 0px;
+  max-height: calc(100vh - 20px);
+  overflow: hidden;
+}
+
+.note-space {
+  display: flex;
+  flex-flow: column;
+  max-height: inherit;
+  overflow-y: auto;
+  height: auto;
 }
 
 .left-menu {
@@ -121,14 +134,15 @@ body {
   background-size: 100% 28px;
 }
 
-.note_buttons {
+.note-buttons {
+  display: flex;
   margin: 5px 20px;
-  float: right;
+  justify-content: flex-end;
 
   .button{
     background-color: $primary_black;
     color: $font_white;
-    margin: 0 5px;
+    margin: 15px 5px;
     float: left;
     font-family: $font-main;
     font-weight: $regular;
@@ -141,9 +155,10 @@ body {
     border-bottom: 3px solid transparent;
   }
   .button:hover {
-       border-bottom: 5px solid $primary_yellow;
-       transition: 0.2s;
-       transform: translateY(-3px);
+    border-bottom: 5px solid $primary_yellow;
+    transition: 0.2s;
+    transform: translateY(-3px);
+    margin: 10px 5px;
    }
 
 }
