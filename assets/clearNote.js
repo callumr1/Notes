@@ -1,0 +1,3 @@
+function clearNote(){
+    $(".note").empty();
+}

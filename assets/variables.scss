@@ -1,0 +1,16 @@
+// Main colour variables
+$primary_black: #111111;
+$secondary_black: #1C1C1C;
+$primary_yellow: #FFDF36;
+$secondary_yellow: #FFDF5E;
+$font_white: #F1E6E4;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Kalam:300,400,700|Patrick+Hand');
+$font-main: 'Kalam', cursive;
+$font-secondary: 'Patrick Hand', cursive;
+
+// Font Weights
+$light: 300;
+$regular: 400;
+$bold: 700;
