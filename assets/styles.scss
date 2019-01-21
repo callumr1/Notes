@@ -15,6 +15,7 @@ body {
 }
 
 .header {
+  display: block;
   overflow: hidden;
   background-color: $primary_black;
   padding: 20px 10px;
@@ -92,7 +93,7 @@ body {
   display: flex;
   flex-flow: column;
   flex: 80%;
-  padding: 0px;
+  padding: 30px 100px 0;
   max-height: calc(100vh - 20px);
   overflow: hidden;
 }
@@ -102,7 +103,6 @@ body {
   flex-flow: column;
   max-height: inherit;
   overflow-y: auto;
-  height: auto;
 }
 
 .left-menu {
@@ -121,7 +121,6 @@ body {
   line-height: 28px;
   height: auto;
   background-color: $primary_yellow;
-  margin: 20px;
   padding: 35px 55px 27px;
   position: relative;
   border: 1px solid $primary_black;
