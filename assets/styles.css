@@ -79,9 +79,10 @@ body {
 
 .note-space {
   display: flex;
+  flex-grow: 1;
   flex-flow: column;
   max-height: inherit;
-  overflow-y: auto; }
+  overflow: auto; }
 
 .left-menu {
   height: 100%;
@@ -92,6 +93,7 @@ body {
   padding: 10px 20px; }
 
 .note {
+  flex-grow: 1;
   font-size: 18px;
   font-family: "Patrick Hand", cursive;
   color: #111111;
@@ -100,6 +102,7 @@ body {
   background-color: #FFDF36;
   padding: 35px 55px 27px;
   position: relative;
+  border-radius: 10px;
   border: 1px solid #111111;
   background: -webkit-linear-gradient(top, #9c8300 0%, #FFDF36 8%) 0 57px;
   background: -moz-linear-gradient(top, #9c8300 0%, #FFDF36 8%) 0 57px;
@@ -109,14 +112,17 @@ body {
   -ms-background-size: 100% 28px;
   background-size: 100% 28px; }
 
+.note:focus {
+  outline-width: 0; }
+
 .note-buttons {
   display: flex;
-  margin: 5px 20px;
+  margin: 5px 0;
   justify-content: flex-end; }
   .note-buttons .button {
     background-color: #111111;
     color: #F1E6E4;
-    margin: 15px 5px;
+    margin: 15px 0 15px 10px;
     float: left;
     font-family: "Kalam", cursive;
     font-weight: 400;
@@ -131,6 +137,6 @@ body {
     border-bottom: 5px solid #FFDF36;
     transition: 0.2s;
     transform: translateY(-3px);
-    margin: 10px 5px; }
+    margin: 10px 0 10px 10px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -100,9 +100,10 @@ body {
 
 .note-space {
   display: flex;
+  flex-grow: 1;
   flex-flow: column;
   max-height: inherit;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .left-menu {
@@ -114,7 +115,8 @@ body {
   padding: 10px 20px;
 }
 
-.note{
+.note {
+  flex-grow: 1;
   font-size: 18px;
   font-family: $font-secondary;
   color: $primary_black;
@@ -123,6 +125,7 @@ body {
   background-color: $primary_yellow;
   padding: 35px 55px 27px;
   position: relative;
+  border-radius: 10px;
   border: 1px solid $primary_black;
   background: -webkit-linear-gradient(top, darken($primary_yellow, 30%) 0%, $primary_yellow 8%) 0 57px;
   background: -moz-linear-gradient(top, darken($primary_yellow, 30%) 0%, $primary_yellow 8%) 0 57px;
@@ -132,16 +135,19 @@ body {
   -ms-background-size: 100% 28px;
   background-size: 100% 28px;
 }
+.note:focus {
+  outline-width: 0;
+}
 
 .note-buttons {
   display: flex;
-  margin: 5px 20px;
+  margin: 5px 0;
   justify-content: flex-end;
 
   .button{
     background-color: $primary_black;
     color: $font_white;
-    margin: 15px 5px;
+    margin: 15px 0 15px 10px;
     float: left;
     font-family: $font-main;
     font-weight: $regular;
@@ -157,7 +163,7 @@ body {
     border-bottom: 5px solid $primary_yellow;
     transition: 0.2s;
     transform: translateY(-3px);
-    margin: 10px 5px;
+    margin: 10px 0 10px 10px;
    }
 
 }
