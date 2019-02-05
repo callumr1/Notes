@@ -1,0 +1,169 @@
+@import 'variables.scss';
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: $secondary_black;
+  color: $font_white;
+}
+
+.container{
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: block;
+  background-color: $primary_black;
+  padding: 20px 10px;
+
+  a {
+    float: left;
+    margin: 0 5px;
+    font-family: $font-main;
+    font-weight: $regular;
+    color: $font_white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .menu_buttons:hover {
+    background-color: $primary_yellow;
+    color: black;
+    transition: 0.2s;
+  }
+
+  .logo {
+    font-family: $font-main;
+    font-size: 40px;
+    margin: 0 -10px 0 0;
+    font-weight: $regular;
+  }
+
+  .sub-header {
+    font-family: $font-main;
+    font-size: 20px;
+    font-weight: $regular;
+    padding-left: 0;
+  }
+
+  .active {
+    background-color: $primary_yellow;
+    color: $primary_black;
+  }
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+  height: 100%;
+}
+
+/* Left column (menu) */
+.left {
+  display: flex;
+  flex-flow: column;
+  flex: 20%;
+  padding: 0;
+}
+/* Right column (page content) */
+.right {
+  display: flex;
+  flex-flow: column;
+  flex: 80%;
+  padding: 30px 100px 0;
+  max-height: calc(100vh - 20px);
+  overflow: hidden;
+}
+
+.note-space {
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  max-height: inherit;
+  overflow: auto;
+}
+
+.left-menu {
+  height: 100%;
+  background-color: $primary_black;
+  font-family: $font-main;
+  font-weight: $regular;
+  color: $font_white;
+  padding: 10px 20px;
+}
+
+.note {
+  flex-grow: 1;
+  font-size: 18px;
+  font-family: $font-secondary;
+  color: $primary_black;
+  line-height: 28px;
+  height: auto;
+  background-color: $primary_yellow;
+  padding: 35px 55px 27px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid $primary_black;
+  background: -webkit-linear-gradient(top, darken($primary_yellow, 30%) 0%, $primary_yellow 8%) 0 57px;
+  background: -moz-linear-gradient(top, darken($primary_yellow, 30%) 0%, $primary_yellow 8%) 0 57px;
+  background: linear-gradient(top, darken($primary_yellow, 30%) 0%, $primary_yellow 8%) 0 57px;
+  -webkit-background-size: 100% 28px;
+  -moz-background-size: 100% 28px;
+  -ms-background-size: 100% 28px;
+  background-size: 100% 28px;
+}
+.note:focus {
+  outline-width: 0;
+}
+
+.note-buttons {
+  display: flex;
+  margin: 5px 0;
+  justify-content: flex-end;
+
+  .button{
+    background-color: $primary_black;
+    color: $font_white;
+    margin: 15px 0 15px 10px;
+    float: left;
+    font-family: $font-main;
+    font-weight: $regular;
+    text-align: center;
+    padding: 12px 12px 7px 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    border-bottom: 3px solid transparent;
+  }
+  .button:hover {
+    border-bottom: 5px solid $primary_yellow;
+    transition: 0.2s;
+    transform: translateY(-3px);
+    margin: 10px 0 10px 10px;
+   }
+
+}
