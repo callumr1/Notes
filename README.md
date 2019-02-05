@@ -6,5 +6,4 @@ Notes currently uses HTML, Sass, and JavaScript.
  - User authentication
  - Save Functionality
  - Display the users Notes in the left hand menu
- - Optimise styling for browsers other than Chrome (Firefox, IE, etc)
  - Add Custimisation options like different colour themes, font size, etc.
