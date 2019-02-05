@@ -16,7 +16,6 @@ body {
 
 .header {
   display: block;
-  overflow: hidden;
   background-color: $primary_black;
   padding: 20px 10px;
 
@@ -79,6 +78,7 @@ body {
 /* Create a column layout with Flexbox */
 .row {
   display: flex;
+  height: 100%;
 }
 
 /* Left column (menu) */

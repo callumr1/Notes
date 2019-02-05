@@ -13,7 +13,6 @@ body {
 
 .header {
   display: block;
-  overflow: hidden;
   background-color: #111111;
   padding: 20px 10px; }
   .header a {
@@ -59,7 +58,8 @@ body {
     float: none; } }
 /* Create a column layout with Flexbox */
 .row {
-  display: flex; }
+  display: flex;
+  height: 100%; }
 
 /* Left column (menu) */
 .left {
