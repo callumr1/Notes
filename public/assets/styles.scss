@@ -144,26 +144,124 @@ body {
   margin: 5px 0;
   justify-content: flex-end;
 
-  .button{
-    background-color: $primary_black;
-    color: $font_white;
+  .button {
     margin: 15px 0 15px 10px;
-    float: left;
-    font-family: $font-main;
-    font-weight: $regular;
-    text-align: center;
     padding: 12px 12px 7px 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-    border-bottom: 3px solid transparent;
   }
-  .button:hover {
-    border-bottom: 5px solid $primary_yellow;
-    transition: 0.2s;
-    transform: translateY(-3px);
-    margin: 10px 0 10px 10px;
-   }
+}
+.button{
+  background-color: $primary_black;
+  color: $font_white;
+  float: left;
+  font-family: $font-main;
+  font-weight: $regular;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  border-bottom: 3px solid transparent;
+}
+.button:hover {
+  border-bottom: 5px solid $primary_yellow;
+  transition: 0.2s;
+  transform: translateY(-3px);
+  margin: 10px 0 10px 10px;
+}
 
+.centered-login-body{
+  width: 50%;
+  height: 370px;
+  position: absolute;
+  left:0; right:0;
+  top:0; bottom:0;
+  margin: auto;
+  padding: 20px;
+  background-color: $primary_black;
+  border-radius: 10px;
+
+  .header {
+    display: flex;
+    height: auto;
+    padding: 20px 10px;
+    overflow: auto;
+
+    .centered-header-logo{
+      width: auto;
+      margin: 0 auto;
+    }
+
+    a {
+      float: left;
+      margin: 0 5px;
+      font-family: $font-main;
+      font-weight: $regular;
+      color: $font_white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 28px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .logo {
+      color: $primary_yellow;
+      font-family: $font-main;
+      font-size: 48px;
+      margin: 0 -10px 0 0;
+      font-weight: $regular;
+    }
+
+    .sub-header {
+      color: $primary_yellow;
+      font-family: $font-main;
+      font-size: 20px;
+      font-weight: $regular;
+      padding-left: 0;
+    }
+  }
+  .login-content {
+    display: flex;
+    flex-flow: column;
+
+    label {
+      font-family: $font-main;
+      color: $primary_yellow;
+    }
+    input[type=text], input[type=password] {
+      font-family: $font-main;
+      font-size: 15px;
+      color: $secondary_yellow;
+      background-color: $secondary_black;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 2px 0 12px 0;
+      display: inline-block;
+      border-radius: 4px;
+      border: 1px solid $secondary_black;
+      box-sizing: border-box;
+    }
+    input[type=text]:focus, input[type=password]:focus {
+      border: 1px solid $primary_yellow;
+      outline-color: $primary_yellow;
+    }
+
+    .login-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+    .button {
+      background-color: $secondary_black;
+      width: 40%;
+      margin: 40px 0;
+      padding: 12px 0;
+    }
+    p {
+      font-family: $font-main;
+      font-size: 20px;
+      margin: 40px 0;
+      padding: 10px 0;
+    }
+  }
 }

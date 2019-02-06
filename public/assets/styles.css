@@ -120,23 +120,105 @@ body {
   margin: 5px 0;
   justify-content: flex-end; }
   .note-buttons .button {
-    background-color: #111111;
-    color: #F1E6E4;
     margin: 15px 0 15px 10px;
-    float: left;
-    font-family: "Kalam", cursive;
-    font-weight: 400;
-    text-align: center;
-    padding: 12px 12px 7px 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-    border-bottom: 3px solid transparent; }
-  .note-buttons .button:hover {
-    border-bottom: 5px solid #FFDF36;
-    transition: 0.2s;
-    transform: translateY(-3px);
-    margin: 10px 0 10px 10px; }
+    padding: 12px 12px 7px 12px; }
+
+.button {
+  background-color: #111111;
+  color: #F1E6E4;
+  float: left;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  border-bottom: 3px solid transparent; }
+
+.button:hover {
+  border-bottom: 5px solid #FFDF36;
+  transition: 0.2s;
+  transform: translateY(-3px);
+  margin: 10px 0 10px 10px; }
+
+.centered-login-body {
+  width: 50%;
+  height: 370px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 20px;
+  background-color: #111111;
+  border-radius: 10px; }
+  .centered-login-body .header {
+    display: flex;
+    height: auto;
+    padding: 20px 10px;
+    overflow: auto; }
+    .centered-login-body .header .centered-header-logo {
+      width: auto;
+      margin: 0 auto; }
+    .centered-login-body .header a {
+      float: left;
+      margin: 0 5px;
+      font-family: "Kalam", cursive;
+      font-weight: 400;
+      color: #F1E6E4;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 28px;
+      line-height: 25px;
+      border-radius: 4px; }
+    .centered-login-body .header .logo {
+      color: #FFDF36;
+      font-family: "Kalam", cursive;
+      font-size: 48px;
+      margin: 0 -10px 0 0;
+      font-weight: 400; }
+    .centered-login-body .header .sub-header {
+      color: #FFDF36;
+      font-family: "Kalam", cursive;
+      font-size: 20px;
+      font-weight: 400;
+      padding-left: 0; }
+  .centered-login-body .login-content {
+    display: flex;
+    flex-flow: column; }
+    .centered-login-body .login-content label {
+      font-family: "Kalam", cursive;
+      color: #FFDF36; }
+    .centered-login-body .login-content input[type=text], .centered-login-body .login-content input[type=password] {
+      font-family: "Kalam", cursive;
+      font-size: 15px;
+      color: #FFDF5E;
+      background-color: #1C1C1C;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 2px 0 12px 0;
+      display: inline-block;
+      border-radius: 4px;
+      border: 1px solid #1C1C1C;
+      box-sizing: border-box; }
+    .centered-login-body .login-content input[type=text]:focus, .centered-login-body .login-content input[type=password]:focus {
+      border: 1px solid #FFDF36;
+      outline-color: #FFDF36; }
+    .centered-login-body .login-content .login-buttons {
+      display: flex;
+      justify-content: space-between; }
+    .centered-login-body .login-content .button {
+      background-color: #1C1C1C;
+      width: 40%;
+      margin: 40px 0;
+      padding: 12px 0; }
+    .centered-login-body .login-content p {
+      font-family: "Kalam", cursive;
+      font-size: 20px;
+      margin: 40px 0;
+      padding: 10px 0; }
 
 /*# sourceMappingURL=styles.css.map */
