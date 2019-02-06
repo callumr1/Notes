@@ -3,7 +3,7 @@ Simple notes webapp that allows users to write down their thoughts.
 Notes currently uses HTML, Sass, and JavaScript.
 
 # To-Do
- - Create Sign-in and sign-up pages
+ - Create sign-up page
  - Create Custom 404 page
  - User authentication
  - Save Functionality
